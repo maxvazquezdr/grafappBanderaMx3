@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México - ITP Sistemas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado Institucional -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <!-- Reemplaza con tu imagen local -->
+                <img src="TecNM_logo.png" alt="Logo TecNM"> 
+            </div>
+            <div class="header-titles">
+                <h1>Instituto Tecnológico de Pachuca</h1>
+                <h2>Ingeniería en Sistemas Computacionales</h2>
+            </div>
+            <div class="logo">
+                <!-- Reemplaza con tu imagen local -->
+                <img src="LITP.png" alt="Logo ITP">
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="main-container">
+        
+        <!-- Tarjeta de la Bandera -->
+        <div class="card app-card">
+            <h3 class="card-title">Simulador Interactivo: Bandera de México</h3>
+            
+            <div class="flag-container">
+                <!-- Columna Verde -->
+                <div class="column">
+                    <div class="controls">
+                        <p class="label">Esperanza</p>
+                        <input type="range" id="green-slider" min="0" max="255" value="128">
+                        <p class="hex-value" id="green-hex">#008000</p>
+                    </div>
+                    <div class="visual-area">
+                        <div class="color-box" id="green-box"></div>
+                    </div>
+                </div>
+
+                <!-- Columna Blanca -->
+                <div class="column">
+                    <div class="controls">
+                        <p class="label">Unidad</p>
+                        <p class="hex-value">#FFFFFF</p>
+                    </div>
+                    <div class="visual-area">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Coat_of_arms_of_Mexico.svg" alt="Escudo de México" class="escudo">
+                    </div>
+                </div>
+
+                <!-- Columna Roja -->
+                <div class="column">
+                    <div class="controls">
+                        <p class="label">Sangre de héroes</p>
+                        <input type="range" id="red-slider" min="0" max="255" value="128">
+                        <p class="hex-value" id="red-hex">#800000</p>
+                    </div>
+                    <div class="visual-area">
+                        <div class="color-box" id="red-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta del Equipo -->
+        <div class="card team-card">
+            <h3 class="team-title">Equipo de Desarrollo</h3>
+            <ul class="team-list">
+                <li>
+                    <div class="member-info">
+                        <span class="member-name">Eric Michel Vargas Lara</span>
+                        <span class="member-role">Desarrollador</span>
+                    </div>
+                    <span class="control-number">24200859</span>
+                </li>
+                <li>
+                    <div class="member-info">
+                        <span class="member-name">[Acevedo Curiel Christian Balaám]</span>
+                        <span class="member-role">Desarrollador</span>
+                    </div>
+                    <span class="control-number">24200756</span>
+                </li>
+                <li>
+                    <div class="member-info">
+                        <span class="member-name">[Juárez Pichardo Diego Isaac]</span>
+                        <span class="member-role">Desarrollador</span>
+                    </div>
+                    <span class="control-number">24200811</span>
+                </li>
+                <li>
+                    <div class="member-info">
+                        <span class="member-name">[Diego Maximiliano Vazquez Ruiz]</span>
+                        <span class="member-role">Desarrollador</span>
+                    </div>
+                    <span class="control-number">24201355</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
